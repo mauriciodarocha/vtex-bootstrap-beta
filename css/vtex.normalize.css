@@ -1,0 +1,108 @@
+/*! standard.css 
+* @author Marcelo Anderson
+* @version 1.1 
+* @date 2012-09-24 
+*/
+
+/* HTML5 display definitions
+---------------------------------------- */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/* Base
+---------------------------------------- */
+* {margin: 0; padding: 0; outline: none;}
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { font-size: 12px;  line-height: 1; }
+body, button, input, select, textarea { color: #222; font-family: Arial, Helvetica, sans-serif; }
+
+/* Declarações de seleção - personalizar a cor de fundo */ /*
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; } */
+
+a { color: #000; outline: none; text-decoration: none;}
+a:hover, a:active { outline: 0; }
+a:hover { text-decoration:underline; }
+
+h1,h2,h3,h4,h5,h6{}
+h1 { font-size: 30px; line-height: 36px; }
+h2 { font-size: 24px; line-height: 36px; }
+h3 { font-size: 20px; line-height: 28px; }
+h4 { font-size: 18px; line-height: 22px; }
+h5 { font-size: 14px; line-height: 18px; }
+h6 { font-size: 12px; line-height: 18px; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol, nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+svg:not(:root) { overflow: hidden; }
+
+form, figure, fieldset{ border: 0; margin: 0; padding: 0; }
+
+label { cursor: default; }
+
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+
+button, input, select, textarea { color:#222; font-family: Arial, Helvetica, sans-serif; font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+button, input { line-height: normal; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+
+button[disabled], input[disabled] { cursor: default; }
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+hr{display:none;}
+
+.pull-right {float: right;}
+.pull-left {float: left;}
+.hide-text { background-color: transparent; border: 0; color: transparent; font-size:0px; line-height:0; text-shadow: none; text-indent:9999em; }
+.hidden { display: none !important; visibility: hidden; }
+.invisible {visibility: hidden;}
+.hide {display: none;}
+.show {display: block;}
+.dualColumn{float:left;width:50%;}
+.fourthColumn {float:left;width:25%;}
+
+.clear{clear: both; *zoom:0;}
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }

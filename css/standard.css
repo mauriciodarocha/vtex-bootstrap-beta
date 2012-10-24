@@ -1,0 +1,85 @@
+/*! common.css 
+* @author Marcelo Anderson
+* @date 2012-10-02 
+*/
+
+/* General
+---------------------------------------- */
+body {background:#FFF; color: #666; font-family: Arial, Helvetica, sans-serif; position: relative;}
+
+.tpl-main-container,
+.tpl-main-column {margin: 0 auto; width: 980px;}
+
+
+/* Loading
+---------------------------------------- */
+div#ajaxBusy, div.loading{display:none; height:1px; left:0; position:fixed; top:0; text-align:center; width:100%; z-index:999999;}
+div#ajaxBusy p, div.loading p{background:url("/arquivos/ajax-loader2.gif") no-repeat 115px center #FFF6BF; border:2px #FFD324 solid; border-top:0; border-radius:0 0 5px 5px; box-shadow:0 0 10px rgba(0,0,0,0.7); display:block; font-size:14px; font-weight:bold; margin:0 auto; padding:8px 30px 8px 0;  width:120px;}
+
+
+/* aviso-erro
+---------------------------------------- */
+.aviso-erro, .alerta{background:#fcf8e3 url(/arquivos/icoAlerta.png) no-repeat 10px 15px; border: 1px solid #fbeed5; color: #c09853; font-size:12px; margin:0 0 20px; padding:15px 15px 15px 35px; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);}
+.aviso-erro > p{font-size: 14px; margin-bottom: 8px}
+.aviso-erro ul{list-style:none;}
+.aviso-erro ul li{color:#e40000; line-height: normal; padding:2px 0;}
+input.error{border:1px solid #e40000 !important;}
+.obr {color:#e40000;}
+
+.dica-carrinho{background-color: #DFF0D8;  border: 1px solid #D6E9C6; border-top: none; color: #468847; left:0; height:auto; position:fixed; top:0; width:100%; z-index:200;}
+.dica-carrinho h4{display:none;}
+.dica-carrinho p {color:#468847; font-size:12px; margin: 0 auto; padding:8px 15px; position:relative; text-align:center; width:970px;}
+
+
+/* Header
+---------------------------------------- */
+.tpl-header{}
+.tpl-top-bar {background: #eee4d6;height:25px;}
+.tpl-top-nav {width: 980px;margin: auto;}
+.tpl-top-nav ul {margin-left: 273px;padding-top:6px;}
+.tpl-top-nav li {float: left;color:#333;font-size: 11px;margin-right: 20px;}
+.tpl-top-nav .televendas {float: right;}
+.tpl-top-nav .televendas strong {font-size: 12px; margin-left: 4px;}
+.tpl-header-container {width: 980px;margin: auto;}
+
+.tpl-header-container h1 {float: left;left:32px;top:-7px;}
+.tpl-header-container h1 a{display: block;background: url(/arquivos/header.png) no-repeat 0 0 transparent;height:90px;width:176px;text-indent: -9999px;}
+
+.tpl-welcome {float: left;left: 273px;top: 15px;position: absolute;}
+.tpl-welcome *{color: #fff;}
+.tpl-welcome p {float: left;margin-right: :4px;}
+
+.tpl-top-search{float: left;left: 92px;top:40px;background: url(/arquivos/header.png) no-repeat 0 -100px transparent;height: 34px;width: 400px;}
+.tpl-top-search legend,
+.tpl-top-search label,
+.tpl-top-search select{display: none;}
+.tpl-top-search input {background: url(/arquivos/spacer.gif) no-repeat 0 0 transparent;border: 0;float: left;}
+.tpl-top-search .fulltext-search-box {left: 10px;width: 280px;padding: 9px;}
+.tpl-top-search .btn-buscar{font-size: 1px; height: 34px; line-height: 1px; overflow: hidden; padding-top: 34px; width: 100px;}
+.tpl-menu{height:44px;background:#003d2c;margin-bottom:7px;top:5px;float:left;width: 980px;}
+.tpl-mini-banners{height: 33px;margin-bottom: 4px;float: left;width: 980px;}
+
+
+/* Slider
+---------------------------------------- */
+.slider-wrapper{margin: 0 auto 10px; position: relative; width: 980px;}
+.slider{height: 370px; overflow: hidden; position: relative; width: 980px;}
+.slider-nav,
+.slider-control{left: 0; position: absolute; width: 100%;}
+.slider-nav{top: 0;}
+.slider-nav .slider-nav-prev,
+.slider-nav .slider-nav-next{background: url(/arquivos/banner_nav.png) no-repeat; height: 91px; margin-top: -45px; position: absolute; top: 50%; width: 45px;}
+.slider-nav .slider-nav-prev{background-position: bottom left; left: 0;}
+.slider-nav .slider-nav-next{background-position: bottom right; right: 0;}
+.slider-nav .slider-nav-prev:hover{background-position: top right;}
+.slider-nav .slider-nav-next:hover{background-position: top right;}
+.slider-control{bottom: 0;}
+.slider-control a{background:url(/arquivos/banner_bullets.png) no-repeat transparent 0 0; border: none; color: transparent; font-size: 0px; height: 17px; line-height: 0; text-shadow: none; text-indent: -99999em; width: 18px;}
+.slider-control a:hover,
+.slider-control a.activeSlide{background-position: right top;}
+
+
+/* Footer
+---------------------------------------- */
+.tpl-footer{}
+.tpl-footer-bottom{width: 980px;margin: auto;}
