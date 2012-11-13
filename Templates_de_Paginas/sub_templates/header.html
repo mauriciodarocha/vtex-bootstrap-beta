@@ -1,0 +1,28 @@
+<div class="tpl-header">
+    <div class="tpl-container clearfix">
+        <h1 class="tpl-logo"><a href="/" title="Loja modelo">Loja modelo</a></h1>
+        <div class="tpl-header-content clearfix">
+            <div class="tpl-top-bar clearfix">
+                <div class="tpl-welcome clearfix"><vtex.cmc:welcomeMessage/></div><!--Fecha tpl-welcome-->
+                <div class="tpl-top-nav">
+                    <ul class="clearfix">
+                        <li><a href="/Vitrine/MinhaConta/MinhaConta.aspx" title="Meu Cadastro" rel="nofollow">Meu Cadastro</a></li>
+                        <li><a href="/Site/MeusPedidos.aspx" title="Meus Pedidos" rel="nofollow">Meus Pedidos</a></li>
+                        <li class="last"><a href="/lista" title="Minha Lista de Compra">Minha Lista de Compras</a></li>
+                    </ul>
+                </div><!--Fecha tpl-top-nav-->
+            </div><!--Fecha tpl-top-bar-->
+            <div class="tpl-top-search"><vtex.cmc:fullTextSearchBox /></div><!--Fecha tpl-top-search-->
+            <div class="tpl-cart">
+                <a href="/Site/Carrinho.aspx" rel="nofollow" class="cart-link">
+                    <vtex.cmc:AmountItemsInCart />
+                </a>
+            </div><!--Fecha tpl-cart-->
+        </div><!--Fecha tpl-header-content-->
+        <div class="clear"></div>
+        <div class="tpl-menu clearfix">
+            <vtex.cmc:departmentNavigator/>
+        </div><!--Fecha tpl-menu-->
+        <div class="tpl-banner-central"><vtex:bannercentral /><!-- Controle customizado tag:bannercentral --></div>
+    </div><!-- tpl-container -->
+</div><!--Fecha tpl-header-->

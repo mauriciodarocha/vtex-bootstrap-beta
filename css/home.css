@@ -1,0 +1,24 @@
+/*
+* @author Marcelo Anderson
+* @date 2012-11-13
+*/
+
+/* Slider
+---------------------------------------- */
+.slider-wrapper{margin: 0 auto 10px; position: relative; width: 980px;}
+.slider{height: 370px; overflow: hidden; position: relative; width: 980px;}
+.slider-nav{position: static;}
+.slider-nav .slider-nav-prev,
+.slider-nav .slider-nav-next,
+.slider-control a{color: transparent; font-size: 0px; line-height: 0; text-shadow: none; text-indent: -99999em;}
+.slider-nav .slider-nav-prev,
+.slider-nav .slider-nav-next{background: url(/arquivos/banner_nav.png) no-repeat; display: block; height: 91px; margin-top: -45px; position: absolute; top: 50%; width: 45px; z-index: 10;}
+.slider-nav .slider-nav-prev{background-position: bottom left; left: 0;}
+.slider-nav .slider-nav-next{background-position: bottom right; right: 0;}
+.slider-nav .slider-nav-prev:hover{background-position: top left;}
+.slider-nav .slider-nav-next:hover{background-position: top right;}
+.slider-control{bottom: 10px; left: 0; position: absolute; text-align: center; width: 100%; z-index: 10}
+.slider-control a{background:url(/arquivos/banner_bullets.png) no-repeat 0 0; display: inline-block; height: 17px; margin: 0 4px; width: 18px;}
+.slider-control a:hover,
+.slider-control a.activeSlide{background-position: right top;}
+.slider-nav, .slider-control{display: none;}

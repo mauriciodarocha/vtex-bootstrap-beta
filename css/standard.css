@@ -1,14 +1,24 @@
-/*! common.css 
-* @author Marcelo Anderson
+/*
+* !Require vtex.normalize.css 
+* @author Marcelo Anderson(www.marceloanderson.com.br)
 * @date 2012-10-02 
 */
 
 /* General
 ---------------------------------------- */
-body {background:#FFF; color: #666; font-family: Arial, Helvetica, sans-serif; position: relative;}
+body {background:#FFF;}
+body, button, input, select, textarea { color: #666; font-size: 12px; font-family: Arial, Helvetica, sans-serif; position: relative;}
+a{color: #000;}
 
-.tpl-main-container,
-.tpl-main-column {margin: 0 auto; width: 980px;}
+.tpl-container, .tpl-main, .mainContentWrapper, .header-steps{margin: 0 auto; width: 980px;}
+.tpl-main, .mainContentWrapper{padding: 0 0 30px;}
+
+.left-column {float: left; width: 175px;}
+.main-column {float: left; width: 770px;}
+.right-column{float: left; width: 175px;}
+
+/* Títulos */
+h2{border: solid #e2e9ed; border-width: 1px 0 3px 0; color:#014975; font-size: 26px; font-family: "Franklin Gothic Demi", "Franklin Gothic", Arial, sans-serif; line-height:48px; margin-bottom: 26px; padding:0 0 0 22px;}
 
 
 /* Loading
@@ -33,50 +43,44 @@ input.error{border:1px solid #e40000 !important;}
 
 /* Header
 ---------------------------------------- */
-.tpl-header{}
-.tpl-top-bar {background: #eee4d6;height:25px;}
-.tpl-top-nav {width: 980px;margin: auto;}
-.tpl-top-nav ul {margin-left: 273px;padding-top:6px;}
-.tpl-top-nav li {float: left;color:#333;font-size: 11px;margin-right: 20px;}
-.tpl-top-nav .televendas {float: right;}
-.tpl-top-nav .televendas strong {font-size: 12px; margin-left: 4px;}
-.tpl-header-container {width: 980px;margin: auto;}
+.tpl-header .tpl-container{position: relative;}
+.tpl-header h1,
+.header-steps h1{float:left; padding: 11px 0 0 20px;}
+.tpl-header h1 a,
+.header-steps h1 a{background: url("/arquivos/logotipo_166x82.png") no-repeat; display: block; height: 82px; line-height: 0; font-size: 0; text-indent: -9000em; width: 166px;}
+.tpl-header-content{float: left; padding-left: 32px; width:762px;}
+.tpl-top-bar {height:36px;}
 
-.tpl-header-container h1 {float: left;left:32px;top:-7px;}
-.tpl-header-container h1 a{display: block;background: url(/arquivos/header.png) no-repeat 0 0 transparent;height:90px;width:176px;text-indent: -9999px;}
+/* welcome */
+.tpl-welcome {float: left; font-size:12px; padding-top: 12px; line-height: 16px;}
+.tpl-welcome *{color:#014975; font-style: normal;}
+.tpl-welcome .welcome{font-weight: bold;}
+.tpl-welcome .loginmsg {font-size: 10px;}
+.tpl-welcome .loginmsg {font-weight: normal;}
+.tpl-welcome .loginmsg a{padding-left: 4px;}
+.tpl-welcome p{float: left; margin-right: 4px;}
+.tpl-welcome a{text-decoration: underline;}
+.tpl-welcome a:hover{text-decoration: none;}
 
-.tpl-welcome {float: left;left: 273px;top: 15px;position: absolute;}
-.tpl-welcome *{color: #fff;}
-.tpl-welcome p {float: left;margin-right: :4px;}
+/*Navegacao Top*/
+.tpl-top-nav{float:right; height:28px;}
+.tpl-top-nav li{line-height:28px; float:left; margin-left:24px;}
+.tpl-top-nav a{color:#014975; font-size:11px; display:block;}
+.tpl-top-nav .nav-list{background:#D4DDE3; padding:0 12px;}
 
-.tpl-top-search{float: left;left: 92px;top:40px;background: url(/arquivos/header.png) no-repeat 0 -100px transparent;height: 34px;width: 400px;}
-.tpl-top-search legend,
-.tpl-top-search label,
-.tpl-top-search select{display: none;}
-.tpl-top-search input {background: url(/arquivos/spacer.gif) no-repeat 0 0 transparent;border: 0;float: left;}
-.tpl-top-search .fulltext-search-box {left: 10px;width: 280px;padding: 9px;}
-.tpl-top-search .btn-buscar{font-size: 1px; height: 34px; line-height: 1px; overflow: hidden; padding-top: 34px; width: 100px;}
-.tpl-menu{height:44px;background:#003d2c;margin-bottom:7px;top:5px;float:left;width: 980px;}
-.tpl-mini-banners{height: 33px;margin-bottom: 4px;float: left;width: 980px;}
+/* Search Top */
+.tpl-top-search{float:left; padding-top: 12px; width:536px;}
+.tpl-top-search legend, .tpl-top-search label, .tpl-top-search select{display: none;}
+.tpl-top-search input {float: left;}
+.tpl-top-search .fulltext-search-box,
+.tpl-top-search .fitext {background:url("/arquivos/bgSearch_1x28.png") repeat-x 0 0; border:1px solid #80a4ba; color:#306b8f; display: block; font-size:12px; height:28px; line-height: 28px; padding:0 17px; width: 402px;}
+.tpl-top-search .btn-buscar,
+.tpl-top-search .fibutton {background:#F9A648 url(/arquivos/ico-bt-buscar.png) no-repeat 9px 3px; color:#014975; display: block; font-size:13px; font-weight:bold; font-family: Tahoma, Geneva, sans-serif; height:30px; line-height:30px; margin-left:1px; padding: 0 12px 0 0; text-align: right; width:95px;}
+.tpl-top-search .btn-buscar:hover,
+.tpl-top-search .fibutton:hover{background:#ff6633;}
 
-
-/* Slider
----------------------------------------- */
-.slider-wrapper{margin: 0 auto 10px; position: relative; width: 980px;}
-.slider{height: 370px; overflow: hidden; position: relative; width: 980px;}
-.slider-nav,
-.slider-control{left: 0; position: absolute; width: 100%;}
-.slider-nav{top: 0;}
-.slider-nav .slider-nav-prev,
-.slider-nav .slider-nav-next{background: url(/arquivos/banner_nav.png) no-repeat; height: 91px; margin-top: -45px; position: absolute; top: 50%; width: 45px;}
-.slider-nav .slider-nav-prev{background-position: bottom left; left: 0;}
-.slider-nav .slider-nav-next{background-position: bottom right; right: 0;}
-.slider-nav .slider-nav-prev:hover{background-position: top right;}
-.slider-nav .slider-nav-next:hover{background-position: top right;}
-.slider-control{bottom: 0;}
-.slider-control a{background:url(/arquivos/banner_bullets.png) no-repeat transparent 0 0; border: none; color: transparent; font-size: 0px; height: 17px; line-height: 0; text-shadow: none; text-indent: -99999em; width: 18px;}
-.slider-control a:hover,
-.slider-control a.activeSlide{background-position: right top;}
+/* cart */
+.tpl-cart {background:url(/arquivos/bg-cart.png) no-repeat 0 0; float:right; height:57px; width:205px;}
 
 
 /* Footer
