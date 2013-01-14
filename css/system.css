@@ -1,0 +1,62 @@
+/*  
+	! Require vtex.normalize.css 
+	! Require standard.css 
+	* @author Marcelo Anderson(github.com/marceloanderson)
+	* @date 2012-11-21
+*/
+
+/* Arquivos requeridos */
+@import url("/arquivos/vtex.normalize.css");
+@import url("/arquivos/standard.css");
+/* Arquivos requeridos */
+
+.conteudo-educativo, .tooltip {zoom:0;}
+
+/* Ocultos
+---------------------------------------- */
+.header, .footer, .searchWrapper, .bottomSearchWrapper, .tpl-top-search, .history {display:none;}
+
+/* General
+---------------------------------------- */
+.mainContentWrapper{}
+.content {}
+
+.mainContentWrapper:before, .mainContentWrapper:after{content:"";display:table;}
+.mainContentWrapper:after{clear:both;} .mainContentWrapper{*zoom:1;}
+.content:before, .content:after{content:"";display:table;}
+.content:after{clear:both;} .content{*zoom:1;}
+
+
+/* Header
+---------------------------------------- */
+body.body-steps{}/* paginas com header-steps */
+
+
+/* Footer
+---------------------------------------- */
+
+
+/* Titulos Das Páginas
+---------------------------------------- */
+
+
+/* Steps
+---------------------------------------- */
+.steps {margin: 0 auto 48px;}
+.steps ul:before, .steps ul:after{content:"";display:table;} 
+.steps ul:after{clear:both;} .steps ul{*zoom:0;}
+.steps li{background:url(/arquivos/sprite-steps.png) no-repeat; display:block; float: left; height:66px; text-indent:-9999px;}
+/* STEPS PASSO 1 */
+body.login #ctl00_TopBar_TopBar1_liIdentificacao   {background-position:0 0; width: 340px;}/* steps identificacao */
+body.login #ctl00_TopBar_TopBar1_liEntregaEmbalagem{background-position:-340px 0; width: 274px;}/* steps Entrega */
+body.login #ctl00_TopBar_TopBar1_liPagamento       {background-position:-614px 0; width: 242px;}/* steps Pagamento */
+/* STEPS PASSO 2 */
+body.endereco-compra #ctl00_TopBar_ComercioTopBar_liIdentificacao, body.frete #ctl00_TopBar_ComercioTopBar_liIdentificacao, body.embalagem #ctl00_TopBar_TopBar1_liIdentificacao{background-position:0 -66px; width: 340px;}/* steps identificacao */
+body.endereco-compra #ctl00_TopBar_ComercioTopBar_liEntregaEmbalagem, body.frete #ctl00_TopBar_ComercioTopBar_liEntregaEmbalagem, body.embalagem #ctl00_TopBar_TopBar1_liEntregaEmbalagem{background-position:-340px -66px; width: 274px;}/* steps Entrega */
+body.endereco-compra #ctl00_TopBar_ComercioTopBar_liPagamento, body.frete #ctl00_TopBar_ComercioTopBar_liPagamento, body.embalagem #ctl00_TopBar_TopBar1_liPagamento{background-position:-614px 0; width: 242px;}/* steps Pagamento */
+/* STEPS PASSO 3 */
+body.forma-pagamento #ctl00_TopBar_TopBar1_liIdentificacao	 {background-position:0 -66px; width: 340px;}/* steps identificacao */
+body.forma-pagamento #ctl00_TopBar_TopBar1_liEntregaEmbalagem{background-position:-340px 0; width: 274px;}/* steps Entrega */
+body.forma-pagamento #ctl00_TopBar_TopBar1_liPagamento       {background-position:-614px -132px; width: 242px;}/* steps Pagamento */
+
+
